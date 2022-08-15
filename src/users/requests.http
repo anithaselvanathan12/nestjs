@@ -1,0 +1,57 @@
+### Create a new user
+
+POST http://localhost:7000/auth/signup
+Content-Type: application/json
+
+{
+    "email":"admin@admin.com",
+    "password":"Test@123"
+}
+
+
+### whoami
+GET http://localhost:7000/auth/whoami
+
+### signout
+POST http://localhost:7000/auth/signout
+
+
+### signin
+
+POST http://localhost:7000/auth/signin
+Content-Type: application/json
+
+{
+    "email":"admin@admin.com",
+    "password":"Test@123"
+}
+
+
+
+### Find a user with particular id
+
+Get http://localhost:7000/auth/178455
+
+
+### Find all user with particular email
+
+Get http://localhost:7000/auth?email=ramana@yopmail.com
+
+
+### Remove a user with particular id
+
+Delete http://localhost:7000/auth/234234234
+
+
+
+### Update a user with particular id
+
+Patch  http://localhost:7000/auth/134234234
+Content-Type: application/json
+
+{
+    "email":"ramana@yopmail.com",
+    "password":"Test@123"
+}
+
+
